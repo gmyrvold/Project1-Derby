@@ -28,40 +28,61 @@ body {
 }
 #finish{
     position: absolute;
-    left: 1500px;
+    left: 1350px;
     transform: rotate(90deg);
     height: 350px;
     width: 700px;
-    bottom: 450px;
+    bottom: 465px;
 }
 .input {
     position: absolute;
     text-align: center;
-    height: 300px;
+    height: 275px;
     width: 1200px;
     bottom: 10px;
     left: 300px;
     background-color: rgb(99, 71, 21);
+    border-style: solid;
+    border-color: white;
   }
 #submit {
     position: absolute;
     height: 50px;
     width: 100px;
     bottom: 90px;
+    right: 400px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: black;
 }
 #answer {
     position: absolute;
     height: 45px;
-    left: 475px;
     width: 100px;
     bottom: 90px;
     font-size: 25px;
+    left: 550px;
+    border-style: solid;
+    border-color: black;
 }
 #question {
     position: absolute;
+    list-style-type: none;
     height: 45px;
-    left: 150px;
+    left: 420px;
     width: 100px;
-    bottom: 90px;
+    bottom: 130px;
     font-size: 30px;
+}
+#startGame {
+    position: absolute;
+    bottom: 220px;
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    left: 550px;
+    color: white;
+    background-color: blue;
+    border-style: solid;
+    border-color: black;
 }
