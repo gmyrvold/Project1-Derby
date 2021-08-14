@@ -20,22 +20,28 @@ function updateQuestion() {
     mathElement.innerHTML = `Question: ${randomizeQuestions[0].question}`
 }
 
-function answerQuestion() {
+function checkAnswer() {
     let answer = document.querySelector('#answer').value
     if (answer === randomizeQuestions[0].answer) {
         document.getElementById('horse5').style.right='1600px'
     }
 }
 
+function getNewQuestion() {
+    console.log(randomizeQuestions)
+    randomizeQuestions.shift()
+    console.log(randomizeQuestions)
+}
+
 const randomizeQuestions = []
-for (i = 0; i < 1; i++) {
+for (i = 0; i < 10; i++) {
     randomizeQuestions.push(mathProblems[Math.floor(Math.random() * 3)])
 }
 updateQuestion()
-//console.log(randomizeQuestions)
-
 // document.querySelector('#submit').addEventListener('click',answerQuestion)
 const buttonSubmit = document.querySelector('#submit')
 buttonSubmit.addEventListener('click', () => {
-    answerQuestion()
+    checkAnswer()
+    getNewQuestion()
+    updateQuestion()
 })
