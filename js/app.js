@@ -15,17 +15,10 @@ let mathProblems = [
     }
 ]
 //console.log(mathProblems)
-
-const randomizeQuestions = []
-for (i = 0; i < 1; i++) {
-    const getRandomQuestion = () => {
-        return mathProblems[Math.floor(Math.random() * 3)]
-    }
-    randomizeQuestions.push(getRandomQuestion())
-mathElement = document.querySelector('#question')
-mathElement.innerHTML = `Question: ${randomizeQuestions[0].question}`
+function updateQuestion() {
+    mathElement = document.querySelector('#question')
+    mathElement.innerHTML = `Question: ${randomizeQuestions[0].question}`
 }
-//console.log(randomizeQuestions)
 
 function answerQuestion() {
     let answer = document.querySelector('#answer').value
@@ -33,4 +26,16 @@ function answerQuestion() {
         document.getElementById('horse5').style.right='1600px'
     }
 }
-document.querySelector('#submit').addEventListener('click',answerQuestion)
+
+const randomizeQuestions = []
+for (i = 0; i < 1; i++) {
+    randomizeQuestions.push(mathProblems[Math.floor(Math.random() * 3)])
+}
+updateQuestion()
+//console.log(randomizeQuestions)
+
+// document.querySelector('#submit').addEventListener('click',answerQuestion)
+const buttonSubmit = document.querySelector('#submit')
+buttonSubmit.addEventListener('click', () => {
+    answerQuestion()
+})
