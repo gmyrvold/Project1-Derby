@@ -44,34 +44,50 @@ function getNewQuestion() {
 function moveHorse1() {
     const comPlayers = document.getElementById('horse1')
     let startPosition = 1700
-    setInterval(function(){
+    const movement = setInterval(function(){
         startPosition -= 100
         comPlayers.style.right = startPosition + 'px'
-    },1000)
+
+        if (startPosition === -100) {
+            clearInterval(movement)
+        }
+    },1800)
 }
 function moveHorse2() {
     const comPlayers = document.getElementById('horse2')
     let startPosition = 1700
-    setInterval(function(){
+    const movement = setInterval(function(){
         startPosition -= 100
         comPlayers.style.right = startPosition + 'px'
-    },1000)
+
+        if (startPosition === -100) {
+            clearInterval(movement)
+        }
+    },1600)
 }
 function moveHorse3() {
     const comPlayers = document.getElementById('horse3')
     let startPosition = 1700
-    setInterval(function(){
+    const movement = setInterval(function(){
         startPosition -= 100
         comPlayers.style.right = startPosition + 'px'
-    },1000)
+
+        if (startPosition === -100) {
+            clearInterval(movement)
+        }
+    },1500)
 }
 function moveHorse4() {
     const comPlayers = document.getElementById('horse4')
     let startPosition = 1700
-    setInterval(function(){
+    const movement = setInterval(function(){
         startPosition -= 100
         comPlayers.style.right = startPosition + 'px'
-    },1000)
+
+        if (startPosition === -100) {
+            clearInterval(movement)
+        }
+    },1200)
 }
 const randomizeQuestions = []
 for (i = 0; i < 10; i++) {
