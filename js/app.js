@@ -26,16 +26,12 @@ function checkAnswer() {
         movePlayer()
     }
 }
-//let startPosition = 'right: 1700px;'
-// function movePlayer() {
-//     const user = document.getElementById('horse5')
-//     //.style.right.value = 'right: -100px;'
-//     let startPosition = 1700
-//     setInterval(function(){
-//         startPosition -= 100
-//         user.style.right = startPosition + 'px'
-//     },1000)
-// }
+let userPosition = 1700
+function movePlayer() {
+    const user = document.getElementById('horse5')
+    userPosition -= 100
+    user.style.right = userPosition + 'px'
+}
 
 function getNewQuestion() {
     randomizeQuestions.shift()
