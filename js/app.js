@@ -31,6 +31,10 @@ function movePlayer() {
     const user = document.getElementById('horse5')
     userPosition -= 100
     user.style.right = userPosition + 'px'
+    // if (userPosition > document.getElementById('horse1').startPosition) {
+    //     positionElement = document.querySelector('#placement')
+    //     positionElement.innerHTML = 'You are currently in first place'
+    // }
 }
 
 function getNewQuestion() {

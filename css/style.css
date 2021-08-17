@@ -61,3 +61,11 @@ body {
     border-style: solid;
     border-color: black;
 }
+#placement {
+    position: absolute;
+    height: 45px;
+    left: 70px;
+    width: 100px;
+    bottom: 200px;
+    font-size: 30px;
+}
