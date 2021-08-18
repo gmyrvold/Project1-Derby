@@ -8,6 +8,9 @@ let mathProblems = [
     {
         'question': '4 * 6 =',
         'answer': '24'
+    },{
+        'question': '10 * 5 =',
+        'answer': '50'
     },
     {
         'question': '1 * 26 =',
@@ -26,15 +29,38 @@ function checkAnswer() {
         movePlayer()
     }
 }
+let placement = 0
 let userPosition = 1700
 function movePlayer() {
     const user = document.getElementById('horse5')
     userPosition -= 100
     user.style.right = userPosition + 'px'
-    // if (userPosition > document.getElementById('horse1').startPosition) {
-    //     positionElement = document.querySelector('#placement')
-    //     positionElement.innerHTML = 'You are currently in first place'
-    // }
+    getPlacement()
+}
+
+function getPlacement() {
+    let actualPlace 
+    placement = 0
+    if (userPosition < horsePosition('horse1')) {
+        placement++
+    }
+    if (userPosition < horsePosition('horse2')) {
+        placement++
+    }
+    if (userPosition < horsePosition('horse3')) {
+        placement++
+    }
+    if (userPosition < horsePosition('horse4')) {
+        placement++
+    }
+    actualPlace = 5 - placement
+    document.querySelector('span').innerText = `${actualPlace} place`
+}
+
+function horsePosition(id) {
+    let x = document.getElementById(id).style.right
+    let y = x.substring(0,x.length-2)
+    return parseInt(y)
 }
 
 function getNewQuestion() {
@@ -47,11 +73,11 @@ function moveHorse1() {
     const movement = setInterval(function(){
         startPosition -= 100
         comPlayers.style.right = startPosition + 'px'
-
+        getPlacement()
         if (startPosition === -100) {
             clearInterval(movement)
         }
-    },1800)
+    },2500)
 }
 function moveHorse2() {
     const comPlayers = document.getElementById('horse2')
@@ -59,11 +85,11 @@ function moveHorse2() {
     const movement = setInterval(function(){
         startPosition -= 100
         comPlayers.style.right = startPosition + 'px'
-
+        getPlacement()
         if (startPosition === -100) {
             clearInterval(movement)
         }
-    },1600)
+    },1800)
 }
 function moveHorse3() {
     const comPlayers = document.getElementById('horse3')
@@ -71,7 +97,7 @@ function moveHorse3() {
     const movement = setInterval(function(){
         startPosition -= 100
         comPlayers.style.right = startPosition + 'px'
-
+        getPlacement()
         if (startPosition === -100) {
             clearInterval(movement)
         }
@@ -83,11 +109,11 @@ function moveHorse4() {
     const movement = setInterval(function(){
         startPosition -= 100
         comPlayers.style.right = startPosition + 'px'
-
+        getPlacement()
         if (startPosition === -100) {
             clearInterval(movement)
         }
-    },1200)
+    },2000)
 }
 const randomizeQuestions = []
 for (i = 0; i < 10; i++) {
