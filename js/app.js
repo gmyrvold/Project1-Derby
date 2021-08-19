@@ -15,6 +15,38 @@ let mathProblems = [
     {
         'question': '1 * 26 =',
         'answer': '26'
+    },
+    {
+        'question': '2 * 6 =',
+        'answer': '12'
+    },
+    {
+        'question': '5 * 3 =',
+        'answer': '15'
+    },
+    {
+        'question': '9 * 4 =',
+        'answer': '36'
+    },
+    {
+        'question': '8 * 6 =',
+        'answer': '48'
+    },
+    {
+        'question': '11 * 3 =',
+        'answer': '33'
+    },
+    {
+        'question': '7 * 3 =',
+        'answer': '21'
+    },
+    {
+        'question': '2 * 7 =',
+        'answer': '14'
+    },
+    {
+        'question': '8 * 3 =',
+        'answer': '24'
     }
 ]
 //console.log(mathProblems)
@@ -117,7 +149,7 @@ function moveHorse4() {
 }
 const randomizeQuestions = []
 for (i = 0; i < 10; i++) {
-    randomizeQuestions.push(mathProblems[Math.floor(Math.random() * 3)])
+    randomizeQuestions.push(mathProblems[Math.floor(Math.random() * 12)])
 }
 updateQuestion()
 
