@@ -59,34 +59,39 @@ function checkAnswer() {
     let answer = document.querySelector('#answer').value
     if (answer === randomizeQuestions[0].answer) {
         movePlayer()
+    } else {
+        getNewQuestion()
+        updateQuestion()
     }
 }
-let placement = 0
+let placement = 5
 let userPosition = 1700
 function movePlayer() {
     const user = document.getElementById('horse5')
     userPosition -= 100
     user.style.right = userPosition + 'px'
     getPlacement()
+    if (placement === 1 & userPosition === -100) {
+        alert("Congrats! You win!")
+    }
 }
 
 function getPlacement() {
     let actualPlace 
-    placement = 0
+    placement = 5
     if (userPosition < horsePosition('horse1')) {
-        placement++
+        placement--
     }
     if (userPosition < horsePosition('horse2')) {
-        placement++
+        placement--
     }
     if (userPosition < horsePosition('horse3')) {
-        placement++
+        placement--
     }
     if (userPosition < horsePosition('horse4')) {
-        placement++
+        placement--
     }
-    actualPlace = 5 - placement
-    document.querySelector('span').innerText = `${actualPlace} place`
+    document.querySelector('span').innerText = `${placement} place`
 }
 
 function horsePosition(id) {
@@ -121,7 +126,7 @@ function moveHorse2() {
         if (startPosition === -100) {
             clearInterval(movement)
         }
-    },1800)
+    },2500)
 }
 function moveHorse3() {
     const comPlayers = document.getElementById('horse3')
@@ -133,7 +138,7 @@ function moveHorse3() {
         if (startPosition === -100) {
             clearInterval(movement)
         }
-    },1500)
+    },2300)
 }
 function moveHorse4() {
     const comPlayers = document.getElementById('horse4')
@@ -145,10 +150,10 @@ function moveHorse4() {
         if (startPosition === -100) {
             clearInterval(movement)
         }
-    },2000)
+    },2600)
 }
 const randomizeQuestions = []
-for (i = 0; i < 10; i++) {
+for (i = 0; i < 20; i++) {
     randomizeQuestions.push(mathProblems[Math.floor(Math.random() * 12)])
 }
 updateQuestion()

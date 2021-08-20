@@ -46,7 +46,7 @@ body {
     left: 300px;
     width: 100px;
     bottom: 130px;
-    font-size: 35px;
+    font-size: 30px;
     color: white;
 }
 #startGame {
@@ -78,6 +78,7 @@ body {
     list-style-type: none;
     font-size: 70px;
     left: 200px;
+    font-family: 'Permanent Marker';
 }
 #com1 {
     position: absolute;
@@ -86,14 +87,16 @@ body {
     list-style-type: none;
     font-size: 70px;
     left: 200px;
+    font-family: 'Permanent Marker';
 }
 #com2 {
     position: absolute;
-    bottom: 550px;
+    bottom: 540px;
     color: white;
     list-style-type: none;
     font-size: 70px;
     left: 200px;
+    font-family: 'Permanent Marker';
 }
 #com3 {
     position: absolute;
@@ -102,15 +105,76 @@ body {
     list-style-type: none;
     font-size: 70px;
     left: 200px;
+    font-family: 'Permanent Marker';
 }
 #com4 {
     position: absolute;
-    bottom: 780px;
+    bottom: 770px;
     color: white;
     list-style-type: none;
     font-size: 70px;
     left: 200px;
+    font-family: 'Permanent Marker';
 }
 .lineup {
     background-color: rgb(130, 92, 45);
+}
+#audience {
+    position: absolute;
+    bottom: 850px;
+    width: 500px;
+}
+#audience2 {
+    position: absolute;
+    bottom: 850px;
+    width: 500px;
+    left: 550px;
+}
+#audience3 {
+    position: absolute;
+    bottom: 850px;
+    width: 500px;
+    left: 1100px;
+}
+#bushes {
+    position: absolute;
+    bottom: 220px;
+    height: 125px;
+    left: -50px;
+}
+#bushes2 {
+    position: absolute;
+    bottom: 220px;
+    height: 125px;
+    left: 250px;
+}
+#bushes3 {
+    position: absolute;
+    bottom: 220px;
+    height: 125px;
+    left: 400px;
+}
+#bushes4 {
+    position: absolute;
+    bottom: 220px;
+    height: 125px;
+    left: 600px;
+}
+#bushes5 {
+    position: absolute;
+    bottom: 220px;
+    height: 125px;
+    left: 900px;
+}
+#bushes6 {
+    position: absolute;
+    bottom: 220px;
+    height: 125px;
+    left: 1200px;
+}
+#bushes7 {
+    position: absolute;
+    bottom: 220px;
+    height: 125px;
+    left: 1500px;
 }
