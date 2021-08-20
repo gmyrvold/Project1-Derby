@@ -71,3 +71,43 @@ body {
     font-size: 30px;
     color: white;
 }
+#player1 {
+    position: absolute;
+    bottom: 320px;
+    color: white;
+    list-style-type: none;
+    font-size: 70px;
+    left: 200px;
+}
+#com1 {
+    position: absolute;
+    bottom: 430px;
+    color: white;
+    list-style-type: none;
+    font-size: 70px;
+    left: 200px;
+}
+#com2 {
+    position: absolute;
+    bottom: 550px;
+    color: white;
+    list-style-type: none;
+    font-size: 70px;
+    left: 200px;
+}
+#com3 {
+    position: absolute;
+    bottom: 660px;
+    color: white;
+    list-style-type: none;
+    font-size: 70px;
+    left: 200px;
+}
+#com4 {
+    position: absolute;
+    bottom: 780px;
+    color: white;
+    list-style-type: none;
+    font-size: 70px;
+    left: 200px;
+}
