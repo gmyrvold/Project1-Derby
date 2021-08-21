@@ -28,6 +28,7 @@ body {
     font-size: 20px;
     border-style: solid;
     border-color: black;
+    font-family: 'Ubuntu', sans-serif;
 }
 #answer {
     position: absolute;
@@ -48,6 +49,7 @@ body {
     bottom: 130px;
     font-size: 30px;
     color: white;
+    font-family: 'Ubuntu', sans-serif;
 }
 #startGame {
     position: absolute;
@@ -60,6 +62,7 @@ body {
     background-color: blue;
     border-style: solid;
     border-color: black;
+    font-family: 'Ubuntu', sans-serif;
 }
 #placement {
     position: absolute;
@@ -70,6 +73,7 @@ body {
     bottom: 200px;
     font-size: 35px;
     color: white;
+    font-family: 'Ubuntu', sans-serif;
 }
 #player1 {
     position: absolute;

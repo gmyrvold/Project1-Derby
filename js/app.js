@@ -47,6 +47,26 @@ let mathProblems = [
     {
         'question': '8 * 3 =',
         'answer': '24'
+    },
+    {
+        'question': '9 * 5 =',
+        'answer': '45'
+    },
+    {
+        'question': '3 * 4 =',
+        'answer': '12'
+    },
+    {
+        'question': '7 * 9 =',
+        'answer': '49'
+    },
+    {
+        'question': '4 * 2 =',
+        'answer': '8'
+    },
+    {
+        'question': '5 * 2 =',
+        'answer': '10'
     }
 ]
 //console.log(mathProblems)
