@@ -9,12 +9,12 @@ let mathProblems = [
         'question': '4 * 6 =',
         'answer': '24'
     },{
-        'question': '10 * 5 =',
-        'answer': '50'
+        'question': '6 * 5 =',
+        'answer': '30'
     },
     {
-        'question': '1 * 26 =',
-        'answer': '26'
+        'question': '1 * 4 =',
+        'answer': '4'
     },
     {
         'question': '2 * 6 =',
@@ -33,8 +33,8 @@ let mathProblems = [
         'answer': '48'
     },
     {
-        'question': '11 * 3 =',
-        'answer': '33'
+        'question': '1 * 3 =',
+        'answer': '3'
     },
     {
         'question': '7 * 3 =',
@@ -173,8 +173,8 @@ function moveHorse4() {
     },2600)
 }
 const randomizeQuestions = []
-for (i = 0; i < 20; i++) {
-    randomizeQuestions.push(mathProblems[Math.floor(Math.random() * 12)])
+for (i = 0; i < 50; i++) {
+    randomizeQuestions.push(mathProblems[Math.floor(Math.random() * 17)])
 }
 updateQuestion()
 
